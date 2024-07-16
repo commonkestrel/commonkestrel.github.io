@@ -1,0 +1,126 @@
+main {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 4rem;
+    background-color: var(--secondary-background);
+    width: 100%;
+    min-height: 100%;
+    color: var(--secondary-color);
+    padding-bottom: 10rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+}
+
+.highlight {
+    line-height: 2;
+    z-index: 5;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.highlight:hover::before {
+    height: 50%;
+}
+
+.highlight::before {
+    content: "";
+    height: 33%;
+    width: 105%;
+    display: block;
+    z-index: -5;
+    opacity: 40%;
+    position: absolute;
+    left: -2.5%;
+    margin-bottom: 0.5em;
+    transition: height 200ms ease;
+    background: linear-gradient(180deg, transparent 50%, #fe55b2 50%);
+}
+
+p .highlight::before {
+    width: 100%;
+    left: 0;
+}
+
+.body {
+    width: 100%;
+    text-align: left;
+}
+
+.content p, .content a {
+    font-size: 1.25rem;
+}
+
+.content h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.content ul {
+    font-size: 1.3rem;
+    margin: -1rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+@media (orientation:landscape) {
+    .content {
+        width: 60%;
+    }
+}
+
+@media (orientation:portrait) {
+    .content {
+        width: 90%;
+    }
+}
+
+.portrait {
+    height: calc(min(15rem, 30vw));
+    width: calc(min(15rem, 30vw));
+    object-fit: cover;
+    clip-path: circle(calc(min(5.9rem, 11vw)));
+    margin: 1rem;
+    transform: scale(125%);
+    overflow: hidden;
+    padding: 0;
+}
+
+.content > div {
+    width: 100%;
+}
+
+.content > div:has(.portrait) {
+    min-height: min(15rem, 30vw);
+}
+
+.content > div:nth-of-type(odd) img {
+    float: left;
+}
+
+
+.content > div:nth-of-type(even) img {
+    float: right;
+}
+
+.divider {
+    width: 100%;
+    height: 3.5rem;
+    margin-bottom: 2rem;
+    border-bottom: var(--secondary-color) solid 1px;
+}

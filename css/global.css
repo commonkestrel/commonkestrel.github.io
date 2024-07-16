@@ -1,0 +1,22 @@
+html {
+    height: 100%;
+    width: 100%;
+
+    --primary-background: #FE5E55;
+    --primary-color: #EEF5DB;
+    --secondary-color: #f3e5f3;
+    --secondary-background: #773344;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Jost', serif;
+    margin: 0;
+}
+
+.secondary-icon {
+    filter: brightness(0) saturate(100%) invert(21%) sepia(21%) saturate(2157%) hue-rotate(298deg) brightness(95%) contrast(83%);
+}

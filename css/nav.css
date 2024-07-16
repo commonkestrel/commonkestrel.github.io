@@ -1,0 +1,113 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.lines {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 4rem;
+    cursor: pointer;
+}
+
+.lines img {
+    height: 3rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 0.5rem;
+    margin: 0;
+    z-index: 1;
+}
+
+.line {
+    padding: 0;
+    width: 0;
+    height: 75%;
+    border-left: var(--secondary-background) solid 3px;
+    background-color: var(--secondary-color);
+    margin-top: 0.5rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    margin-right: 0;
+    transition: padding-left 0.25s cubic-bezier(1, 0, 0, 1), padding-right 0.25s cubic-bezier(1, 0, 0, 1), margin-right 0.25s cubic-bezier(1, 0, 0, 1);
+    z-index: 2;
+}
+
+@media (orientation:portrait) {
+    .line {
+        display: none;
+    }
+}
+
+.lines:hover .line {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: -3px;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-left: 1rem;    
+}
+
+.extern-links {
+    margin-top: 0.25rem;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+}
+
+.extern-link {
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--secondary-background);
+    font-size: 0.75rem;
+    transition: font-size 0.25s ease-out;
+}
+
+.extern-link:hover {
+    font-size: 0.8rem;
+}
+
+.checkerboard {
+    position: relative;
+    left: 1rem;
+    top: 0.5rem;
+    height: 3rem;
+    background: repeating-conic-gradient(var(--primary-color) 0% 25%, var(--secondary-background) 0% 50%)
+        50% / 20px 20px;
+    border-radius: 0.25rem;
+    flex: 1;
+    margin: 0 3rem;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    right: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--secondary-background);
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 0 2rem;
+}
