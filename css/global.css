@@ -8,6 +8,16 @@ html {
     --secondary-background: #773344;
     overflow-y: scroll;
     overflow-x: hidden;
+
+    scrollbar-color: var(--secondary-background) var(--secondary-color);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-background);
 }
 
 body {

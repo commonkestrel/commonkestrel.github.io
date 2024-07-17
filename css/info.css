@@ -70,7 +70,8 @@ p .highlight::before {
 
 .content ul {
     font-size: 1.3rem;
-    margin: -1rem;
+    text-wrap: balance;
+    margin: 2rem;
 }
 
 .center {
@@ -81,6 +82,10 @@ p .highlight::before {
 @media (orientation:landscape) {
     .content {
         width: 60%;
+    }
+
+    ul {
+        columns: 2;
     }
 }
 
