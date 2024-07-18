@@ -30,3 +30,7 @@ body {
 .secondary-icon {
     filter: brightness(0) saturate(100%) invert(21%) sepia(21%) saturate(2157%) hue-rotate(298deg) brightness(95%) contrast(83%);
 }
+
+.primary-icon {
+    filter: brightness(0) saturate(100%) invert(93%) sepia(93%) saturate(178%) hue-rotate(208deg) brightness(96%) contrast(99%);
+}

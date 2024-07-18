@@ -129,3 +129,43 @@ p .highlight::before {
     margin-bottom: 2rem;
     border-bottom: var(--secondary-color) solid 1px;
 }
+
+.opposite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opposite img {
+    height: 1.5rem;
+}
+
+.projects {
+    columns: 1;
+    list-style-type: none;
+}
+
+.project > * {
+    padding: 0;
+    margin: 0.1rem;
+}
+
+.project p {
+    line-height: 1;
+}
+
+.project:not(:last-child) {
+    border-bottom: #f3e5f31a solid 1px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    color: #f3e5f39c;
+}
+
+.tags p {
+    font-size: 1rem;
+}
