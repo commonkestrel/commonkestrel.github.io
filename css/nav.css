@@ -69,7 +69,15 @@
     width: 5rem;
 }
 
-.extern-link {
+.intern-links {
+    margin-top: 0.25rem;
+    margin-left: 0.5rem;
+    display: none;
+    flex-direction: column;
+    width: 5rem;
+}
+
+.extern-link, .intern-link {
     font-weight: 900;
     text-decoration: none;
     cursor: pointer;
@@ -110,4 +118,18 @@
     font-size: 2rem;
     font-weight: normal;
     padding: 0 2rem;
+}
+
+@media (orientation:portrait) {
+    .extern-links, .right-content {
+        display: none;
+    }
+
+    .intern-links {
+        display: flex;
+    }
+
+    .checkerboard {
+        margin-left: 1rem;
+    }
 }

@@ -64,7 +64,6 @@ html, body {
   position: relative;
   bottom: 2vw;
   left: 12vw;
-  display: flex;
   justify-content: center;
   align-items: middle;
 }

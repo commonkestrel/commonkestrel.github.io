@@ -26,6 +26,11 @@
                 <a class="extern-link" href="https://www.linkedin.com/in/jett-bergthold-1570a42b3" target="_blank">LinkedIn</a>
                 <a class="extern-link" href="https://scrapbook.hackclub.com/Kestrel" target="_blank">Scrapbook</a>
             </div>
+            <div class="intern-links">
+                <a class="intern-link" href="/about.html">About</a>
+                <a class="intern-link" href="/experience.html">Experience</a>
+                <a class="intern-link" href="/contact.html">Contact</a>
+            </div>
         </div>
         <div class="checkerboard"></div>
         <div class="right-content">
@@ -123,13 +128,17 @@
                 <li class="project">
                     <div class="opposite">
                         <h3 id="tiny-home">Arked Arcadia</h3>
-                        <img class="primary-icon" src="/static/export.svg" />
+                        <input type="checkbox" class="hidden" id="dropdown-check" value="">
+                        <label class="dropdown-label" for="dropdown-check" data-toggle="dropdown"><img class="primary-icon" src="/static/arrow.svg" /></label>
                     </div>
                     <p>A sustainable tiny home designed in Revit with under 500 sq.ft. of living space</p>
                     <div class="tags">
                         <p>Revit</p>
                         <p>Architecture</p>
                         <p>Design</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="./static/tinyhome.jpg" />
                     </div>
                 </li>
                 <li class="project">
@@ -166,6 +175,19 @@
                         <p>Rust</p>
                         <p>Package</p>
                         <p>Async</p>
+                    </div>
+                </li>
+                <li class="project">
+                    <div class="opposite">
+                        <h3 id="tiny-home">pixel-font</h3>
+                        <a href="https://github.com/commonkestrel/pixel-font"><img class="primary-icon" src="/static/git.svg" /></a>
+                    </div>
+                    <p>A web-app created to allow for the design of pixelated fonts to be exported to a ROM</p>
+                    <div class="tags">
+                        <p>Rust</p>
+                        <p>Typescript</p>
+                        <p>WASM</p>
+                        <p>HTML</p>
                     </div>
                 </li>
             </ul>
