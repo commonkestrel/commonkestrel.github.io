@@ -6,9 +6,8 @@ main {
     top: 4rem;
     background-color: var(--secondary-background);
     width: 100%;
-    min-height: 100%;
+    min-height: calc(100% - 4rem);
     color: var(--secondary-color);
-    padding-bottom: 10rem;
 }
 
 .content {
@@ -168,4 +167,81 @@ p .highlight::before {
 
 .tags p {
     font-size: 1rem;
+}
+
+.timeline-item {
+    display: table-row;
+}
+
+.timeline-item > * {
+}
+
+.timeline-date {
+    display: table-cell;
+    text-wrap: balance;
+    line-height: 1;
+    vertical-align: top;
+    padding-top: 0.25rem;
+    padding-right: 0.75rem;
+}
+
+.timeline-item ul {
+    columns: 1;
+}
+
+.timeline-marker {
+    vertical-align: top;
+    display: table-cell;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.timeline-marker::before {
+    position: absolute;
+    top: 0.25rem;
+    left: 0;
+    content: "";
+    display: block;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: var(--primary-background);
+    border-radius: 0.75rem;
+}
+
+.timeline-item:not(:last-of-type) .timeline-marker::after {
+    content: "";
+    width: 2.5px;
+    background-color: var(--primary-color);
+    display: block;
+    position: absolute;
+    top: 1.75rem;
+    left: calc(0.75rem - 3px);
+    bottom: 0;
+}
+
+.timeline-content {
+    padding-left: 3rem;
+    display: table-cell;
+}
+
+.timeline-content h3 {
+    position: relative;
+    top: 0.25rem;
+    margin: 0;
+    line-height: 1;
+}
+
+.timeline-content ul {
+    margin: 0.5rem;
+}
+
+.timeline-content .location {
+    color: #ff65ad;
+}
+
+@media (orientation:landscape) {
+    .timeline-marker {
+        position: relative;
+    }
 }
