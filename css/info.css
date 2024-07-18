@@ -19,6 +19,7 @@ main {
 
 .content h1 {
     font-size: 3.5rem;
+    margin-top: 0;
 }
 
 .highlight {
@@ -146,6 +147,16 @@ p .highlight::before {
 
 .opposite img {
     height: 1.5rem;
+    overflow: visible;
+}
+
+.opposite a, .opposite label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    background-image: radial-gradient(var(--primary-background) 5%, #b33f53 15%,  var(--secondary-background) 60%);
 }
 
 .projects {
@@ -180,6 +191,10 @@ p .highlight::before {
 .timeline-item {
     display: table-row;
     list-style: none;
+}
+
+.timeline-item:last-child .timeline-content {
+    padding-bottom: 0;
 }
 
 .timeline-left-date {
