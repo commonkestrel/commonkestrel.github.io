@@ -314,6 +314,6 @@ p .highlight::before {
     }
 
     .project:has(input:checked) .image-container {
-        max-height: 90vw;
+        max-height: 81vw;
     }
 }

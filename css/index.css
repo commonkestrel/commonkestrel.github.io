@@ -8,7 +8,7 @@ html, body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 200vw;
-  min-height: 45vh;
+  min-height: 50vh;
   height: calc(min(50vh + 4rem, 30vw + 12rem));
   position: relative;
   top: -10rem;
