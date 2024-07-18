@@ -271,6 +271,7 @@ p .highlight::before {
     transform: rotate(0deg);
     transition: transform 0.25s ease-out;
     width: 1.5rem;
+    height: 1.5rem;
     cursor: pointer;
 }
 
@@ -297,4 +298,18 @@ p .highlight::before {
 
 .project:has(input:checked) .image-container {
     max-height: 40vw;
+}
+
+@media (orientation:portrait) {
+    .projects {
+        padding: 0;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project > .image-container {
+        width: 90%;
+    }
 }
