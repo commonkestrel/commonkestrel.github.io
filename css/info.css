@@ -73,6 +73,14 @@ p .highlight::before {
     margin: 2rem;
 }
 
+.content li {
+    margin: 1rem 0;
+}
+
+.content li:first-child {
+    margin-top: 0;
+}
+
 .center {
     display: flex;
     justify-content: center;
