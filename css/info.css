@@ -268,12 +268,14 @@ p .highlight::before {
 }
 
 .dropdown-label {
-    transform: rotate(-90deg);
+    transform: rotate(0deg);
     transition: transform 0.25s ease-out;
+    width: 1.5rem;
+    cursor: pointer;
 }
 
 .project:has(input:checked) .dropdown-label {
-    transform: rotate(0deg);
+    transform: rotate(-90deg);
 }
 
 .image-container {
