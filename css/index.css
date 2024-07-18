@@ -8,6 +8,7 @@ html, body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 200vw;
+  min-height: 45vh;
   height: calc(min(50vh + 4rem, 30vw + 12rem));
   position: relative;
   top: -10rem;
@@ -32,16 +33,16 @@ html, body {
   left: 14vw;
   position: relative;
   margin: 0;
-  font-size:calc(min(20rem, 40vh));
+  font-size:calc(min(20rem, 20vw));
   font-weight: normal;
 }
 
 .name-card h2 {
   position: relative;
-  right: calc(4.5*min(4.25rem, 5vw) - 14vw);
+  right: calc(4.5*min(4.25rem, 4.25vw) - 14vw);
   bottom: calc(min(4.25rem, 0.5vw));
   margin: 0;
-  font-size: calc(min(4.25rem, 8.5vh));
+  font-size: calc(min(4.25rem, 4vw));
   font-weight: normal;
   letter-spacing: 2px;
 }
@@ -116,7 +117,7 @@ html, body {
 .header-link {
   color: var(--secondary-color);
   background-color: var(--secondary-background);
-  font-size: calc(min(2.5rem, 2.5vw));
+  font-size: calc(min(3.5rem, 4.5vw));
   cursor: pointer;
   transition: color 0.5s ease-out, background-color 0.5s ease-out;
   text-decoration: none;
@@ -142,15 +143,15 @@ div:has(> .header-link) {
 }
 
 .link-wrapper:nth-last-child(2) {
-  transform: translateX(calc(1*(min(2.5rem, 3vw) + 2rem)*sin(5deg)));
+  transform: translateX(calc(1*(min(3.5rem, 4.5vw) + 2rem)*sin(5deg)));
 }
 
 .link-wrapper:nth-last-child(3) {
-  transform: translateX(calc(2*(min(2.5rem, 3vw) + 2rem)*sin(5deg)));
+  transform: translateX(calc(2*(min(3.5rem, 4.5vw) + 2rem)*sin(5deg)));
 }
 
 .link-wrapper:nth-last-child(4) {
-  transform: translateX(calc(3*(min(2.5rem, 3vw) + 2rem)*sin(5deg)));
+  transform: translateX(calc(3*(min(3.5rem, 4.5vw) + 2rem)*sin(5deg)));
 }
 
 .navbar {

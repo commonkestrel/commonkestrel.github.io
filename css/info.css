@@ -171,13 +171,11 @@ p .highlight::before {
 
 .timeline-item {
     display: table-row;
+    list-style: none;
 }
 
-.timeline-item > * {
-}
-
-.timeline-date {
-    display: table-cell;
+.timeline-left-date {
+    display: none;
     text-wrap: balance;
     line-height: 1;
     vertical-align: top;
@@ -185,14 +183,20 @@ p .highlight::before {
     padding-right: 0.75rem;
 }
 
+.timeline-right-date {
+    margin-top: 0;
+    line-height: 1;
+    position: relative;
+    top: 0.25rem;
+}
+
 .timeline-item ul {
     columns: 1;
 }
 
 .timeline-marker {
-    vertical-align: top;
     display: table-cell;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 }
@@ -223,6 +227,7 @@ p .highlight::before {
 .timeline-content {
     padding-left: 3rem;
     display: table-cell;
+    padding-bottom: 3rem;
 }
 
 .timeline-content h3 {
@@ -241,6 +246,18 @@ p .highlight::before {
 }
 
 @media (orientation:landscape) {
+    .timeline-right-date {
+        display: none;
+    }
+
+    .timeline-left-date {
+        display: table-cell;
+    }
+
+    .timeline-item {
+        display: table-row;
+    }
+
     .timeline-marker {
         position: relative;
     }
