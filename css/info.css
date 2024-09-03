@@ -189,7 +189,8 @@ p .highlight::before {
 }
 
 .timeline-item {
-    display: table-row;
+    display: flex;
+    flex-direction: row;
     list-style: none;
 }
 
