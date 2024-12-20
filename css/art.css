@@ -36,7 +36,7 @@
 .timeline img {
     max-width: 65vw;
     max-height: 35rem;
-    max-width: calc(80vw - 1.25rem);
+    max-width: calc(50vw - 1.25rem);
 }
 
 .timeline .name {
